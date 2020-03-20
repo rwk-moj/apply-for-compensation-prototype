@@ -28,14 +28,15 @@
               {{ offenderNameQuestion }}
             </label>
           </h1>
-    </div>
-
+        </div>
+        {{ govukWarningText({
+          text: "We will never contact the offender.",
+          iconFallbackText: "Warning"
+        }) }}
         <div id="offenderName">
           {{ govukInput({
 
-            hint: {
-              "text": offenderNameHint
-            },
+           
             id: "first-name-offender",
             name: "first-name-offender",
             value:  data['first-name-offender']
