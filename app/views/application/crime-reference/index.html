@@ -38,8 +38,8 @@
             value: data['crimeReferenceNumber']
             }) }}
       {{ govukDetails({
-        summaryText: "Help with your crime reference number",
-        text: "If you don't have your crime reference number, you can call 101. Alternatively, if you know the police station the crime was reported to you can contact them direct."
+        summaryText: crimeReferenceWarningSummary,
+        text: crimeReferenceWarningText
       }) }}
       {% from "govuk/components/button/macro.njk" import govukButton %}
 
